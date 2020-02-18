@@ -1,0 +1,13 @@
+%h2 クレジットカード情報登録
+= form_for(@credit, url: new_address_registration_path) do |f|
+  = render "devise/shared/error_messages", resource: @credit
+  .field
+    = f.label :creditnumber
+    %br/
+    = f.text_field :year
+  .field
+    = f.label :month
+    %br/
+    = f.text_field :css
+  .actions
+    = f.submit "Sign up"
